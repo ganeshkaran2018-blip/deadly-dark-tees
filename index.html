@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Deadly Dark Tees</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#0d0d0f;--mut:#6b6b73;--line:#e8e8ec;--soft:#f4f4f2;--acc:#c1121f;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));scroll-behavior:smooth;background:#fff}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Archivo,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#fff;z-index:30}
+.serif{font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:400}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.bar{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:9px 0}
+.bar div{display:inline-block;padding-left:100%;animation:mq 28s linear infinite}
+@keyframes mq{to{transform:translateX(-100%)}}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:25;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hd{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;letter-spacing:.06em;font-size:1rem;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+.logo b{color:var(--acc)}
+.cartbtn{background:var(--ink);color:#fff;border:0;border-radius:999px;padding:9px 18px;font-weight:600;font-size:.9rem}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.hero{display:grid;gap:36px;padding:44px 0 30px;align-items:center}
+@media(min-width:860px){.hero{grid-template-columns:1.1fr 1fr;padding:70px 0 50px}}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);font-weight:600;margin:0 0 14px}
+.hero h1{font-size:clamp(3rem,11vw,6.2rem);line-height:.95;letter-spacing:-.02em;margin:0 0 18px}
+.hero h1 em{color:var(--acc)}
+.hero p.lead{font-size:1.1rem;color:var(--mut);max-width:42ch;margin:0 0 26px}
+.cta{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-weight:600;padding:14px 28px;border-radius:999px;border:0}
+.cta:hover{background:var(--acc)}
+.ghost{display:inline-block;margin-left:14px;color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--ink)}
+.stack{position:relative;height:min(125vw,560px);max-width:480px;margin:0 auto;width:100%}
+.stack div{position:absolute;width:52%;aspect-ratio:5/6;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.18);background:var(--soft)}
+.stack img{width:100%;height:100%;object-fit:cover;display:block}
+.stack .a{left:0;top:8%;transform:rotate(-6deg)}
+.stack .b{right:0;top:0;transform:rotate(5deg);z-index:2}
+.stack .c{left:21%;bottom:0;width:58%;aspect-ratio:9/16;transform:none;z-index:3;border-radius:22px;background:#000;box-shadow:0 24px 60px rgba(193,18,31,.35),0 10px 30px rgba(0,0,0,.25)}
+.stack video{width:100%;height:100%;object-fit:cover;display:block}
+.badge{position:absolute;top:10px;left:10px;background:var(--acc);color:#fff;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:5px 10px;border-radius:999px}
+.snd{position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,.6);color:#fff;border:0;border-radius:999px;padding:6px 12px;font-size:.75rem;font-weight:600;backdrop-filter:blur(6px)}
+.nums{display:flex;gap:36px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;margin-bottom:56px;flex-wrap:wrap}
+.nums div{font-size:.85rem;color:var(--mut)}
+.nums b{display:block;color:var(--ink);font-size:1.5rem;font-family:"Instrument Serif",Georgia,serif;font-weight:400}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.sh h2{font-size:clamp(2.2rem,7vw,3.4rem);line-height:1;margin:0}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 16px;font-size:.88rem;font-weight:500;color:var(--ink)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:34px 22px}
+.card{display:flex;flex-direction:column}
+.art{aspect-ratio:5/6;border-radius:18px;overflow:hidden;background:var(--soft);transition:transform .3s,box-shadow .3s}
+.art img{width:100%;height:100%;object-fit:cover;display:block;mix-blend-mode:multiply}
+.card:hover .art{transform:translateY(-4px);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.meta{padding-top:14px;display:flex;flex-direction:column;gap:3px}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.top h3{margin:0;font-size:1rem;font-weight:800;letter-spacing:.03em}
+.price{font-weight:600}
+.tag{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:1.15rem;color:var(--mut);margin:0 0 8px;line-height:1.25}
+.sizes{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.sz{min-width:38px;padding:5px 8px;border:1px solid var(--line);background:#fff;border-radius:8px;font-size:.8rem;font-weight:500;color:var(--ink)}
+.sz.on{border-color:var(--ink);background:var(--ink);color:#fff}
+.add{background:#fff;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:10px;font-weight:600}
+.add:hover{background:var(--ink);color:#fff}
+.story{margin:80px 0 0;background:var(--soft);border-radius:26px;padding:48px 26px;text-align:center}
+.story h2{font-size:clamp(2.2rem,7vw,3.6rem);margin:0 0 14px;line-height:1}
+.story p{max-width:52ch;margin:0 auto;color:var(--mut);font-size:1.05rem}
+footer{text-align:center;color:var(--mut);font-size:.85rem;padding:40px 20px}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);opacity:0;pointer-events:none;transition:opacity .25s;z-index:40}
+.scrim.open{opacity:1;pointer-events:auto}
+aside{position:fixed;top:0;right:0;bottom:0;width:min(400px,100%);background:#fff;box-shadow:-10px 0 40px rgba(0,0,0,.15);transform:translateX(100%);transition:transform .28s;padding:calc(20px + env(safe-area-inset-top,0px)) 22px calc(20px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;z-index:50;overflow-y:auto}
+aside.open{transform:none}
+.ah{display:flex;justify-content:space-between;align-items:center}
+.ah h2{margin:0;font-size:2rem}
+.x{background:none;border:0;font-size:1.6rem;line-height:1;color:var(--ink)}
+.items{flex:1 0 90px;overflow-y:auto;margin-top:10px}
+.item{display:flex;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.item img{width:56px;height:67px;object-fit:cover;border-radius:10px;background:var(--soft)}
+.item .i{flex:1;font-weight:600;font-size:.92rem}
+.item small{display:block;color:var(--mut);font-weight:400}
+.item button{background:none;border:0;color:var(--mut);text-decoration:underline;padding:0;font-size:.8rem}
+.item .p{text-align:right;font-weight:600}
+.total{display:flex;justify-content:space-between;font-weight:800;font-size:1.2rem;padding:16px 0 6px}
+.msg{color:var(--mut);font-size:.88rem;min-height:1.4em;margin:4px 0 10px}
+.co{width:100%}
+.fields{display:grid;gap:8px;margin:6px 0 12px}
+.fields input,.fields textarea{font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);width:100%;resize:none}
+.wab{display:block;margin-top:8px;background:#25d366;color:#0b1f12;border:0;border-radius:999px;padding:14px;font-weight:600}
+.note{color:var(--mut);font-size:.78rem;margin:8px 0 0;text-align:center}
+.msg.go{color:var(--ink);font-weight:600}
+.wab.hl{box-shadow:0 0 0 4px rgba(37,211,102,.35)}
+.pp{border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0;text-align:center}
+.pp p{margin:0 0 8px;font-size:.88rem}
+.idrow{display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:8px}
+.idrow code{background:var(--soft);padding:8px 10px;border-radius:8px;font-size:.88rem;word-break:break-all}
+.idrow button{border:1.5px solid var(--ink);background:#fff;color:var(--ink);border-radius:999px;padding:7px 14px;font-weight:600}
+.qr{display:flex;justify-content:center;margin-top:6px}
+.ph{color:var(--mut)}
+@media(prefers-reduced-motion:reduce){.bar div{animation:none;padding-left:20px}aside,.scrim,.art{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar"><div>Dark is eternal, Dark is everything! &nbsp;·&nbsp; New designs dropping &nbsp;·&nbsp; Dark is eternal, Dark is everything! &nbsp;·&nbsp; Wear the shadows</div></div>
+<header><div class="hd"><a class="logo" href="#top">Deadly <b>Dark</b> Tees</a><button class="cartbtn" id="open">Cart (<span id="count">0</span>)</button></div></header>
+<div class="wrap" id="top">
+<section class="hero">
+<div>
+<p class="eyebrow">Oversized graphic tees</p>
+<h1 class="serif">Dark is <em>eternal.</em><br>Dark is everything.</h1>
+<p class="lead">Heavy prints, haunted icons and fallen angels. Made for people who feel most alive after sunset.</p>
+<a class="cta" href="#shop">Shop the collection</a><a class="ghost" href="#story">Our story</a>
+</div>
+<div class="stack"><div class="a" aria-hidden="true"><img id="h1" alt=""></div><div class="b" aria-hidden="true"><img id="h2" alt=""></div><div class="c"><video id="ad" muted loop playsinline autoplay preload="metadata" aria-label="Deadly Dark Tees ad"></video><span class="badge">New drop</span><button id="snd" class="snd" aria-label="Turn sound on">Sound on</button></div></div>
+</section>
+<div class="nums"><div><b>23</b>original designs</div><div><b>XS–2XL</b>every size</div><div><b>₹999</b>every tee</div></div>
+<section id="shop">
+<div class="sh"><h2 class="serif">The collection</h2><div class="chips" id="chips"></div></div>
+<div class="grid" id="grid"></div>
+</section>
+<section class="story" id="story"><h2 class="serif">Born after midnight.</h2><p>Deadly Dark Tees is for the ones who find calm in the shadows. Every design is a small story about angels, monsters, heroes and wolves, printed big and made to be worn loud.</p></section>
+</div>
+<footer>© Deadly Dark Tees · Dark is eternal, Dark is everything!</footer>
+<div class="scrim" id="scrim"></div>
+<aside id="drawer" aria-label="Shopping cart">
+<div class="ah"><h2 class="serif">Your cart</h2><button class="x" id="close" aria-label="Close cart">×</button></div>
+<div class="items" id="items"></div>
+<div class="total"><span>Total</span><span id="total">₹0</span></div>
+<p class="msg" id="msg"></p>
+<div class="fields"><input id="cn" placeholder="Your name" autocomplete="name"><input id="cp" placeholder="Phone number" inputmode="tel" autocomplete="tel"><textarea id="ca" rows="2" placeholder="Delivery address with pincode" autocomplete="street-address"></textarea></div>
+<button class="cta co" id="payb">Pay by UPI</button>
+<div class="pp" id="pp" hidden><p>Send <b id="ppa"></b> to this UPI ID</p><div class="idrow"><code id="ppid"></code><button id="cpy">Copy</button></div><p class="ph">Open GPay, PhonePe or Paytm, choose Pay to UPI ID, paste it and enter the exact amount.</p><p class="ph">Or scan this QR with another phone.</p><div class="qr" id="qr"></div></div>
+<button class="wab co" id="wab">Send order on WhatsApp</button>
+<p class="note">Pay first, then send your order with the payment screenshot on WhatsApp.</p>
+</aside>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+var PRODUCTS=[
+{id:7,name:"THE HORNED ONE",tag:"He rises where the light ends.",cat:"Gothic",price:1,img:"t7.jpg"},
+{id:8,name:"DUALITY",tag:"Saint on one side. Monster on the other.",cat:"Gothic",price:999,img:"t8.jpg"},
+{id:9,name:"FALLEN",tag:"Hope never dies. It just falls with style.",cat:"Gothic",price:999,img:"t9.jpg"},
+{id:10,name:"REAPER",tag:"Embrace the void.",cat:"Gothic",price:999,img:"t10.jpg"},
+{id:11,name:"RORONOA ZORO",tag:"Steel, silence and a will that won’t bend.",cat:"Anime",price:999,img:"t11.jpg"},
+{id:12,name:"SANCTUM",tag:"A cathedral of candlelight and wings.",cat:"Gothic",price:999,img:"t12.jpg"},
+{id:13,name:"SHINOBI DIVISION",tag:"Silent steps. Crow shadows. Crimson eyes.",cat:"Anime",price:999,img:"t13.jpg"},
+{id:14,name:"ASCEND",tag:"In death we reign.",cat:"Gothic",price:999,img:"t14.jpg"},
+{id:15,name:"THE BATMAN",tag:"Gotham sleeps. He doesn’t.",cat:"Pop",price:999,img:"t15.jpg"},
+{id:16,name:"BLACK CAT",tag:"Nine lives. Zero explanations.",cat:"Wild",price:999,img:"t16.jpg"},
+{id:17,name:"THORNBLADE",tag:"Beauty cuts deeper.",cat:"Gothic",price:999,img:"t17.jpg"},
+{id:18,name:"MADARA UCHIHA",tag:"A smile before the storm.",cat:"Anime",price:999,img:"t18.jpg"},
+{id:19,name:"LONE WOLF",tag:"Hunt alone. Howl louder.",cat:"Wild",price:999,img:"t19.jpg"},
+{id:20,name:"BUY MORE BEER",tag:"The only math that matters on Friday.",cat:"Pop",price:999,img:"t20.jpg"},
+{id:21,name:"LOYALTY",tag:"Wear the crown. Earn it.",cat:"Gothic",price:999,img:"t21.jpg"},
+{id:22,name:"ZORO FLAME",tag:"Burn bright. Never back down.",cat:"Anime",price:999,img:"t22.jpg"},
+{id:23,name:"NIGHTFALL",tag:"When the crow lands, the night begins.",cat:"Gothic",price:999,img:"t23.jpg"},
+{id:24,name:"AIRTIME",tag:"Gravity is optional.",cat:"Pop",price:999,img:"t24.jpg"},
+{id:25,name:"SOVEREIGN",tag:"Crowned in bone. Ruling in silence.",cat:"Gothic",price:999,img:"t25.jpg"},
+{id:26,name:"UNSHAKABLE",tag:"Calm like a king. Fearless like a lion.",cat:"Wild",price:999,img:"t26.jpg"},
+{id:27,name:"MEMENTO MORI",tag:"Remember you’ll die. Remember to live.",cat:"Gothic",price:999,img:"t27.jpg"},
+{id:28,name:"CHAOTIC DESPAIR",tag:"Thorns for letters. Chaos for a voice.",cat:"Gothic",price:999,img:"t28.jpg"},
+{id:29,name:"METALHEAD",tag:"Unsupervised and unapologetic.",cat:"Gothic",price:999,img:"t29.jpg"}
+];
+var SIZES=["XS","S","M","L","XL","2XL"],cart=[],cat="All";
+function P(id){return PRODUCTS.find(function(p){return p.id===id})}
+document.getElementById("h1").src=P(8).img;document.getElementById("h2").src=P(14).img;(function(){var v=document.getElementById("ad"),b=document.getElementById("snd");v.poster="poster.jpg";v.src="ad.mp4";v.muted=true;
+var rm=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;if(rm){v.removeAttribute("autoplay");v.controls=true;b.style.display="none"}else{var p=v.play();if(p&&p.catch)p.catch(function(){})}
+b.onclick=function(){v.muted=!v.muted;b.textContent=v.muted?"Sound on":"Mute";b.setAttribute("aria-label",v.muted?"Turn sound on":"Mute sound");if(!v.muted){var q=v.play();if(q&&q.catch)q.catch(function(){})}}})();
+var chips=document.getElementById("chips"),grid=document.getElementById("grid");
+["All","Gothic","Anime","Wild","Pop"].forEach(function(c){var b=document.createElement("button");b.className="chip"+(c==="All"?" on":"");b.textContent=c;b.onclick=function(){cat=c;[].forEach.call(chips.children,function(x){x.classList.toggle("on",x===b)});draw()};chips.appendChild(b)});
+function draw(){grid.innerHTML="";PRODUCTS.filter(function(p){return cat==="All"||p.cat===cat}).forEach(function(p){
+var size="M",c=document.createElement("article");c.className="card";
+c.innerHTML='<div class="art"><img src="'+p.img+'" alt="'+p.name+' tee" loading="lazy"></div><div class="meta"><div class="top"><h3>'+p.name+'</h3><span class="price">₹'+p.price+'</span></div><p class="tag">'+p.tag+'</p><div class="sizes"></div><button class="add">Add to cart</button></div>';
+var sz=c.querySelector(".sizes");SIZES.forEach(function(s){var b=document.createElement("button");b.className="sz"+(s===size?" on":"");b.textContent=s;b.onclick=function(){size=s;[].forEach.call(sz.children,function(x){x.classList.toggle("on",x===b)})};sz.appendChild(b)});
+c.querySelector(".add").onclick=function(){add(p,size)};grid.appendChild(c)})}
+function add(p,size){var f=cart.find(function(i){return i.id===p.id&&i.size===size});if(f)f.qty++;else cart.push({id:p.id,name:p.name,price:p.price,size:size,qty:1,img:p.img});render();drawer(true)}
+function render(){var el=document.getElementById("items"),t=0,n=0;
+el.innerHTML=cart.length?"":'<p class="msg">Your cart is empty. Pick a tee you can’t stop thinking about.</p>';
+cart.forEach(function(i,idx){t+=i.price*i.qty;n+=i.qty;var d=document.createElement("div");d.className="item";
+d.innerHTML='<img src="'+i.img+'" alt=""><div class="i">'+i.name+'<small>Size '+i.size+' × '+i.qty+'</small><button>Remove</button></div><div class="p">₹'+(i.price*i.qty)+'</div>';
+d.querySelector("button").onclick=function(){cart.splice(idx,1);render()};el.appendChild(d)});
+document.getElementById("total").textContent="₹"+t;document.getElementById("count").textContent=n;document.getElementById("msg").textContent=""}
+function drawer(o){document.getElementById("drawer").classList.toggle("open",o);document.getElementById("scrim").classList.toggle("open",o)}
+document.getElementById("open").onclick=function(){drawer(true)};
+document.getElementById("close").onclick=function(){drawer(false)};
+document.getElementById("scrim").onclick=function(){drawer(false)};
+var UPI="ganeshkaran2018@oksbi",WA="917904629805",STORE="Deadly Dark Tees";
+function showPay(){var pp=document.getElementById("pp"),url="upi://pay?pa="+UPI+"&pn="+encodeURIComponent(STORE)+"&am="+tot()+"&cu=INR";document.getElementById("ppa").textContent="₹"+tot();document.getElementById("ppid").textContent=UPI;pp.hidden=false;var q=document.getElementById("qr");q.innerHTML="";try{new QRCode(q,{text:url,width:150,height:150})}catch(e){}pp.scrollIntoView({block:"nearest"})}
+document.getElementById("cpy").onclick=function(){var b=this;function ok(){b.textContent="Copied"}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(UPI).then(ok,function(){})}else{var t=document.createElement("textarea");t.value=UPI;document.body.appendChild(t);t.select();try{document.execCommand("copy");ok()}catch(e){}document.body.removeChild(t)}};
+function tot(){return cart.reduce(function(t,i){return t+i.price*i.qty},0)}
+function ready(){var m=document.getElementById("msg");m.className="msg";document.getElementById("wab").classList.remove("hl");if(!cart.length){m.textContent="Add a tee before checking out.";return null}var d={n:document.getElementById("cn").value.trim(),p:document.getElementById("cp").value.trim(),a:document.getElementById("ca").value.trim()};if(!d.n||!d.p||!d.a){m.textContent="Please fill in your name, phone and delivery address.";return null}return d}
+document.getElementById("payb").onclick=function(){if(!ready())return;var m=document.getElementById("msg");m.className="msg go";m.textContent="Payment done? Tap Send order on WhatsApp so we can ship your tee.";document.getElementById("wab").classList.add("hl");showPay()};
+document.getElementById("wab").onclick=function(){var d=ready();if(!d)return;var l=["New order: "+STORE,""];cart.forEach(function(i,x){l.push((x+1)+". "+i.name+" (Size "+i.size+") x"+i.qty+" = ₹"+i.price*i.qty)});l.push("","Total: ₹"+tot(),"","Name: "+d.n,"Phone: "+d.p,"Address: "+d.a,"","I have paid by UPI. Screenshot attached.");window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(l.join("\n")),"_blank")};
+draw();render();
+</script>
+</body>
+</html>
